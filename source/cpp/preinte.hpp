@@ -2,8 +2,8 @@
 /****************************************************************************
 * Author:   Lukaß Zhang
 * Since:    2023/05/31
-* Modifyed: 2023/08/26
-* Version:  1.0.0.87
+* Modifyed: 2023/08/27
+* Version:  1.0.0.88
 * Email:    sunny_clouds@outlook.com
 * 
 * Please forgive me for leaving a long paragraph of text written to let my
@@ -21,7 +21,7 @@
 * the C version, I do not recommend you to use that. Please use this version
 * with C++ compiler if possible.
 * 
-* This version can be compiled by MSVC, GCC or Clang. (>=C++14)
+* This version can be compiled by MSVC, GCC or Clang. (>=c++14)
 * 
 * Copyright 2023 Lekco. All Rights Reserved.
 ****************************************************************************/
@@ -324,6 +324,7 @@ namespace preinte {
                 throw STD::runtime_error("File is not open.\n");
                 return;
             }
+            _Stream_cns();
             STD::cout.rdbuf(_File_Stream.rdbuf());
         }
 
